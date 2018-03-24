@@ -13,8 +13,8 @@ reconstruction(float* RESULT, int picture_ID, int Sub_Vol_ID, cudaTextureObject_
 
 	float V[PIC_SET_NUM], W[PIC_SET_NUM], U[PIC_SET_NUM], KEISU[PIC_SET_NUM];
 	float sinData, cosData, ftemp = 0.0f;
-    float theta = 2.0f  * INNER_PI / picParam.np;	//angle change per picture
-    float dn = picParam.sod / picParam.pixel_pitch;
+        float theta = 2.0f  * INNER_PI / picParam.np;	//angle change per picture
+        float dn = picParam.sod / picParam.pixel_pitch;
 
 	/*------------各投影画像について逆投影する座標を計算-------------------*/
 #pragma unroll
